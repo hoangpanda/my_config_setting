@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+struct Edge {
+  int v;
+  ll w;
+};
+
+struct Node {
+  int u;
+  ll dist_u;
+};
+
+struct cmp {
+  bool operator() (Node a, Node b) {
+    return a.dist_u > b.dist_u;
+  }
+}; 
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>graph</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
